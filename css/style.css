@@ -1,0 +1,245 @@
+/* Global Styles */
+
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Raleway', sans-serif;
+   letter-spacing: 1px;
+   line-height: 1.5;
+   background: #f7f7f7;
+}
+ul{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+.wrap-container{
+   width: 80%;
+   margin: 0 auto;
+}
+
+/* Header Styles */
+
+header{
+   background: #293241;
+   padding: 10px;
+   min-height: 50px;
+}
+header h1{
+   float: left;
+   color: #C5E5F4;
+   cursor: pointer;
+}
+header h1 span{
+   color: #cccccc;
+}
+header nav{
+   float: right;
+   margin-top: 16px;
+}
+header nav ul li{
+   display: inline;
+   margin-left: 16px;
+}
+header nav a{
+   color: #f7f7f7;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+header .current{
+   color: #C5E5F4;
+}
+header:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+/* showcase/banner styles */
+
+#banner{
+   background: url('../img/showcase.jpg')no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   min-height: 500px;
+}
+#banner h1{
+   font-size: 48px;
+   margin-top: 100px;
+   display: inline-block;
+   line-height: 1.2;
+}
+#banner p{
+   margin-top: 12px;
+   font-size: 28px;
+   line-height: 1.2;
+}
+#banner .btn{
+   padding: 15px;
+   font-size: 16px;
+   background: #5685bb;
+   color: #f7f7f7;
+   margin-top: 24px;
+   border-radius: 25px;
+   width: 120px;
+   text-align: center;
+   font-weight: lighter;
+}
+#banner .btn:hover{
+   background: #3D5A80;
+   font-weight: bold;
+}
+#banner .btn a{
+   color: #f7f7f7;
+}
+
+/* services styles */
+#services{
+   color: #1e1e1e;
+}
+#services h2{
+   padding-top: 50px;
+   margin-bottom: 50px;
+   font-size: 28px;
+   text-align: center;
+}
+.boxes{
+   margin: 0 auto;
+}
+.box{
+   display: inline-block;
+   width: 45%;
+   text-align: center;
+   padding: 0 2%;
+   margin: 24px 0 48px;
+
+}
+.box h3{
+   margin: 24px auto;
+}
+
+/* contact/get in touch */
+
+#contact{
+   background: rgba(42, 51, 66, 0.98);
+   padding: 10px;
+}
+#contact:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+#contact h2{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+   font-size: 36px;
+   color: #f7f7f7;
+}
+#contact form{
+   float: left;
+   margin-left: 100px;
+}
+#contact input, #contact textarea {
+   padding: 10px 10px 10px 20px;
+   font-size: 16px;
+   width: 300px;
+   display: block;
+   margin-bottom: 12px;
+   background: rgba(0, 0, 0, 0.3);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 20px;
+   color: #eeeeee;
+}
+#contact button{
+   padding: 12px;
+   font-size: 16px;
+   width: 150px;
+   background: #5685bb;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 20px;
+   color: #eeeeee;
+   cursor: pointer;
+}
+#contact button:hover{
+   background: #3D5A80;
+   font-weight: bold;
+}
+.brief-about{
+   color: #f7f7f7;
+   width: 40%;
+   float: left;
+   margin-left: 150px;
+}
+.brief-about p{
+   margin-top: 24px;
+   font-size: 14px;
+}
+.social-icons{
+   float: left;
+   margin-left: 150px;
+   margin-top: 100px;
+}
+.social-icons i{
+   display: inline-block;
+   font-size: 28px;
+   margin-right: 24px;
+   color: #f7f7f7;
+   cursor: pointer;
+   transition: all ease-in-out 0.3s;
+}
+.social-icons i:first-child:hover{
+   color: #5685bb;
+}
+.social-icons i:nth-child(2):hover{
+   color: #59bffa;
+}
+.social-icons i:nth-child(3):hover{
+   color: #ffb74b;
+}
+.social-icons i:last-child:hover{
+   color: #ff3c3c;
+}
+/* #footer-nav{
+   float: right;
+   margin-right: 100px;
+   border-left:  1px solid #777;
+   padding-left: 50px;
+   height: 350px;
+}
+#footer-nav a{
+   color: #f7f7f7;
+   line-height: 1.5;
+}
+#footer-nav a:hover{
+   color: #cccccc;
+} */
+
+footer{
+   clear: both;
+   background: #293241;
+   padding: 18px;
+   color: #f7f7f7;
+   text-align: center;
+   border-top: 1px solid #222933;
+}
+#fixed-back-to-top{
+   position: fixed;
+   background: #293241;
+   border: 1px solid #f7f7f7;
+   bottom: 30px;
+   right: 50px;
+   z-index: 999;
+   padding: 15px;
+   cursor: pointer;
+}
+#arrow-up{
+   width: 0; 
+   height: 0; 
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid #f7f7f7;
+}
