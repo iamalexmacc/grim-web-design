@@ -431,7 +431,7 @@ footer{
 }
 
 /* larger than 768px */
-@media screen and (min-width: 769px){
+@media screen and (max-width: 1920px){
    header h1{
       font-size: 20px;
       padding: 10px;
