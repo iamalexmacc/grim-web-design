@@ -352,7 +352,7 @@ footer{
 
 
 /* smaller than 768px */
-@media screen and (max-width: 767px){
+/* @media screen and (max-width: 767px){
    header h1{
       font-size: 24px;
       padding: 0;
@@ -428,7 +428,7 @@ footer{
       border-right: 5px solid transparent;
       border-bottom: 5px solid #f7f7f7;
    }
-}
+} */
 
 /* larger than 768px */
 @media screen and (max-width: 1920px){
