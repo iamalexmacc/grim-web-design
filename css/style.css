@@ -202,20 +202,6 @@ header:after{
 .social-icons i:last-child:hover{
    color: #ff3c3c;
 }
-/* #footer-nav{
-   float: right;
-   margin-right: 100px;
-   border-left:  1px solid #777;
-   padding-left: 50px;
-   height: 350px;
-}
-#footer-nav a{
-   color: #f7f7f7;
-   line-height: 1.5;
-}
-#footer-nav a:hover{
-   color: #cccccc;
-} */
 
 footer{
    clear: both;
@@ -243,6 +229,7 @@ footer{
    border-bottom: 10px solid #f7f7f7;
 }
 
+/* smaller than 320px */
 @media screen and (max-width: 320px){
    header h1{
       float: none;
@@ -338,5 +325,15 @@ footer{
    }
    footer p{
       font-size: 12px;
+   }
+   #fixed-back-to-top{
+      bottom: 60px;
+      right: 30px;
+      padding: 10px;
+   }
+   #arrow-up{
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #f7f7f7;
    }
 }
