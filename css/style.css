@@ -229,24 +229,24 @@ footer{
    border-bottom: 10px solid #f7f7f7;
 }
 
-/* smaller than 320px */
-@media screen and (max-width: 320px){
-   header h1{
+/* smaller than 425px */
+@media screen and (max-width: 768px){
+   header h1,
+   header nav,
+   header nav li{
       float: none;
-      display: block;
       width: 100%;
-      font-size: 24px;
       text-align: center;
+   }
+   header h1{
+      font-size: 24px;
    }
    header nav{
-      float: none;
-      margin: 0 auto;
-      width: 100%;
+      margin-top: 0;
    }
    header nav ul li{
-      text-align: center;
-      font-size: 14px;
-      margin: 3px 6px;
+      font-size: 18px;
+      margin: 0 3px;
    }
    #banner{
       text-align: center;
@@ -268,10 +268,13 @@ footer{
       font-size: 24px;
       padding: 24px 0;
    }
+   .boxes{
+      margin: 0 auto;
+   }
    .box{
-      width: 90%;
+      width: 100%;
       font-size: 14px;
-      /* margin: 0 auto 24px; */
+      margin: 0 auto 24px;
    }
    .box img{
       height: 120px;
@@ -284,19 +287,28 @@ footer{
    }
    #contact form{
       float: none;
-      margin: 0;
+      margin: 0 auto;
+      width: 100%;
    }
-   #contact input, #contact textarea {
-      padding: 10px 20px;
+   #contact input{
+      padding: 10px 5%;
       font-size: 14px;
-      width: 80%;
-      display: inline-block;
+      width:90%;
+      display: block;
       margin: 0 auto 8px;
+   }
+   #contact textarea{
+      padding: 10px 5%;
+      font-size: 14px;
+      width: 90%;
+      display: inline-block;
    }
    #contact button{
       padding: 8px;
       font-size: 14px;
       width: 100%;
+      display: block;
+      margin: 0 auto;
    }
    .brief-about{
       float: none;
@@ -304,7 +316,7 @@ footer{
       margin: 0 auto;
    }
    .brief-about h3{
-      font-size: 14px;
+      font-size: 16px;
       margin: 36px auto;
       text-align: center;
    }
@@ -335,5 +347,170 @@ footer{
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-bottom: 5px solid #f7f7f7;
+   }
+}
+
+/* smaller than 768px */
+/* @media screen and (max-width: 767px){
+   header h1{
+      font-size: 24px;
+      padding: 0;
+   }
+   header nav ul li{
+      font-size: 14px;
+   }
+   #contact h2{
+      margin-top: 36px;
+      margin-bottom: 36px;
+      font-size: 24px;
+   }
+   #contact form{
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+   }
+   #contact input{
+      padding: 10px 5%;
+      font-size: 14px;
+      width:90%;
+      display: block;
+      margin: 0 auto 8px;
+   }
+   #contact textarea{
+      padding: 10px 5%;
+      font-size: 14px;
+      width: 90%;
+      display: inline-block;
+   }
+   #contact button{
+      padding: 8px;
+      font-size: 14px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+   }
+   .brief-about{
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+   }
+   .brief-about h3{
+      font-size: 16px;
+      margin: 36px auto;
+      text-align: center;
+   }
+   .brief-about p{
+      margin-top: 24px;
+      font-size: 14px;
+      text-align: center;
+   }
+   .social-icons{
+      float: none;
+      margin: 50px auto 25px;
+      text-align: center;
+   }
+   .social-icons i{
+      font-size: 24px;
+      text-align: center;
+      margin: 0 6px;
+   }
+   footer p{
+      font-size: 12px;
+   }
+   #fixed-back-to-top{
+      bottom: 60px;
+      right: 30px;
+      padding: 10px;
+   }
+   #arrow-up{
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #f7f7f7;
+   }
+} */
+
+/* larger than 768px */
+@media screen and (min-width: 768px){
+   header h1{
+      font-size: 20px;
+      padding: 10px;
+   }
+   header nav ul li{
+      font-size: 12px;
+      margin-left: 12px;
+   }
+   
+   #banner h1{
+      font-size: 28px;
+      margin-top: 120px;
+   }
+   #banner p{
+      font-size: 16px;
+   }
+   #banner .btn{
+      margin: 20px 0;
+      padding: 10px;
+      font-size: 12px;
+   }
+   #services h2{
+      font-size: 22px;
+      padding: 20px 0;
+   }
+   .box{
+      font-size: 16px;
+   }
+   .box img{
+      height: 120px;
+      width: 120px;
+   }
+   #contact h2{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 22px;
+   }
+   #contact form{
+      float: left;
+      margin: 0;
+      width: 35%;
+   }
+   #contact input, #contact textarea {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 14px;
+      width: 100%;
+   }
+   #contact button{
+      padding: 8px;
+      font-size: 14px;
+   }
+   
+   .brief-about{
+      width: 35%;
+      float: left;
+      margin-left: 120px;
+   }
+   .social-icons{
+      margin-left: 120px;
+   }
+   .social-icons i{
+      font-size: 24px;
+      margin-right: 20px;
+   }
+   
+   footer{
+      padding: 14px;
+      color: #f7f7f7;
+      text-align: center;
+      font-size: 14px;
+   }
+   #fixed-back-to-top{
+      bottom: 30px;
+      right: 50px;
+      padding: 12px;
+   }
+   #arrow-up{
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #f7f7f7;
    }
 }
